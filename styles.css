@@ -37,7 +37,7 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
-/* For Phone Only */
+
 .card {
     background-color: var(--VERYDARKBLUECBG);
     border-radius: 15px;
@@ -56,4 +56,14 @@ body {
 img {
     border-radius: 10px;
     width: 280px;
+}
+
+.auction{
+    display: flex;
+    justify-content: space-between;
+}
+
+._light_txt {
+    color: var(--SOFTBLUE);
+    font-weight: 300;
 }
