@@ -1,24 +1,54 @@
-*{
+/* Master Reset */
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
+    /* # Variables */
 :root {
 
-/* ## Colors */
+    /* ## Colors */
 
-/* ### Primary */
+    /* ### Primary */
 
---SOFTBLUE: hsl(215, 51%, 70%);
---CYAN: hsl(178, 100%, 50%);
+    --SOFTBLUE: hsl(215, 51%, 70%);
+    --CYAN: hsl(178, 100%, 50%);
 
-/* ### Neutral */
+    /* ### Neutral */
 
---VERYDARKBLUEMBG: hsl(217, 54%, 11%); /* (main BG) */
---VERYDARKBLUECBG: hsl(216, 50%, 16%); /* (card BG) */
---VERYDARKBLUELINE: hsl(215, 32%, 27%); /* (line) */
---WHITE: hsl(0, 0%, 100%);
+    --VERYDARKBLUEMBG: hsl(217, 54%, 11%);
+    /* (main BG) */
+    --VERYDARKBLUECBG: hsl(216, 50%, 16%);
+    /* (card BG) */
+    --VERYDARKBLUELINE: hsl(215, 32%, 27%);
+    /* (line) */
+    --WHITE: hsl(0, 0%, 100%);
 
+}
+
+body {
+    background-color: var(--VERYDARKBLUEMBG);
+    color: var(--WHITE);
+}
+
+/* For Phone Only */
+@media screen and (max-width: 599px) {
+   
+}
+
+/* For Desktop Up */
+@media screen and (min-width:1200px){
+    
+}
+
+/* For Desktop only */
+@media screen and (min-width:1200px) and (max-width: 1799px) {
+    
+}
+
+/* For Big Desktop up */
+@media screen and (min-width:1800px) {
+    
 }
