@@ -64,8 +64,10 @@ img {
     display: flex;
     justify-content: space-between;
 }
-
-p.price::before{
+p.price {
+    color: var(--CYAN);
+}
+p.price::before {
     content: "";
     display: block;
     background: url("images/icon-ethereum.svg") no-repeat;
@@ -73,16 +75,20 @@ p.price::before{
     height: 20px;
     float: left;
     margin: 0 6px 0 0;
+    display: inline-block;
+    align-self: center;
+    background-size: contain;
 }
 
-p.time::before{
+p.time::before {
     content: "";
-    display: block;
     background: url("images/icon-clock.svg") no-repeat;
+    background-size: contain;
     width: 20px;
     height: 20px;
     float: left;
     margin: 0 6px 0 0;
+    display: inline-block;
 }
 
 ._bold_txt {
