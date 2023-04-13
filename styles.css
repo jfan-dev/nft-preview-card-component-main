@@ -35,6 +35,7 @@ body {
     background-color: var(--VERYDARKBLUEMBG);
     color: var(--WHITE);
     font-family: 'Outfit', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -58,14 +59,17 @@ img {
     width: 280px;
 }
 
-.auction{
+
+.auction {
     display: flex;
     justify-content: space-between;
+}
+
+._bold_txt {
+    font-weight: 600;
 }
 
 ._light_txt {
     color: var(--SOFTBLUE);
     font-weight: 300;
 }
-
-
