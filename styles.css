@@ -65,6 +65,26 @@ img {
     justify-content: space-between;
 }
 
+p.price::before{
+    content: "";
+    display: block;
+    background: url("images/icon-ethereum.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+p.time::before{
+    content: "";
+    display: block;
+    background: url("images/icon-clock.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
 ._bold_txt {
     font-weight: 600;
 }
