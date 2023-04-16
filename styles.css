@@ -3,10 +3,10 @@
 
 /* Master Reset */
 * {
-    padding: 0;
-    margin: 0;
     border: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* # Variables */
@@ -47,50 +47,118 @@ body {
     height: 540px;
     justify-content: space-between;
     left: 50%;
-    padding: 25px;
+    padding: 24px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 330px;
+    width: 327px;
 }
 
-img {
+img.nft-img {
     border-radius: 10px;
-    width: 280px;
+    width: 279px;
 }
 
+/* hover view icon position and size */
+img.icon-view {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+}
 
+/* block for image hover effect */
+.hover-effect {
+    border-radius: 10px;
+    height: 279px;
+    opacity: 0;
+    position: absolute;
+    top: 24px;
+    width: 279px;
+}
+
+.hover-effect:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+/* image hover color effect */
+.icon-background {
+    background-color: var(--CYAN);
+    border-radius: 10px;
+    height: 279px;
+    opacity: 50%;
+    width: 279px;
+}
+
+h1 {
+    justify-self: flex-end;
+    letter-spacing: -1px;
+}
+
+.nft_description {
+    line-height: 155%;
+}
+
+/* NFT Price and Time flags */
 .auction {
     display: flex;
     justify-content: space-between;
 }
+
 p.price {
     color: var(--CYAN);
 }
+
 p.price::before {
-    content: "";
-    display: block;
-    background: url("images/icon-ethereum.svg") no-repeat;
-    width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0 6px 0 0;
-    display: inline-block;
-    align-self: center;
     background-size: contain;
+    background: url("images/icon-ethereum.svg") no-repeat;
+    content: "";
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin: 0 -2px 0 0;
+    transform: translateY(10%);
+    width: 20px;
 }
 
 p.time::before {
-    content: "";
-    background: url("images/icon-clock.svg") no-repeat;
     background-size: contain;
-    width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0 6px 0 0;
+    background: url("images/icon-clock.svg") no-repeat;
+    content: "";
     display: inline-block;
+    float: left;
+    height: 20px;
+    margin: 0 3px 0 0;
+    transform: translateY(10%);
+    width: 20px;
 }
 
+/* NFT creator section */
+.trademark {
+    align-items: center;
+    border-top: 1px solid var(--VERYDARKBLUELINE);
+    display: flex;
+    gap: 15px;
+    padding-top: 16px;
+}
+
+.trademark img {
+    border: 1px solid;
+    border-radius: 17px;
+    height: 34px;
+    width: 34px;
+}
+
+/* NFT name and Creator link hover effects */
+h1:hover,
+.creator:hover {
+    color: var(--CYAN);
+    cursor: pointer;
+}
+
+/* Text styles */
 ._bold_txt {
     font-weight: 600;
 }
